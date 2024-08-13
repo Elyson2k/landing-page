@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", "Sans serif";
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #004fb3;
+    width: 100%;
+    padding: 0px 20px;
+}
+
+#logo-header {
+    width: 40%;
+    text-align: center;
+}
+
+#logo-header img {
+    padding: 12px 0;
+    width: 200px;
+}
+
+#navbar {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 17px;
+}
+
+#navbar a {
+    color: #FFF;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 17px;
+    transition: 0.5s;
+}
+
+#navbar a:hover {
+    color: #ffffff6b;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap; /* Adicionado para garantir que elementos se movam para baixo quando necessário */
+    width: 100%;
+    background-color: #dedede;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+}
+
+.lado-e,
+.lado-d {
+    box-sizing: border-box;
+}
+
+.lado-e {
+    width: 35%;
+    margin-left: 15%;
+}
+
+.lado-d {
+    width: 50%;
+}
+
+section img {
+    width: 180px;
+    margin-bottom: 30px;
+    margin-top: 200px;
+    max-width: 100%;
+    height: auto;
+}
+
+.info-flexy h3 {
+    font-size: 50px;
+    margin-bottom: 15px;
+    font-family: "Outfit", sans-serif;
+}
+
+.text-info p {
+    color: #0000008c;
+    font-size: 17px;
+    margin-bottom: 25px;
+    font-family: "Edu VIC WA NT Beginner", cursive;
+}
+
+.btn-demostrar {
+    background-color: rgb(27, 163, 27);
+    width: 400px;
+    text-align: center;
+    padding: 25px;
+    border-radius: 15px;   
+}
+
+.btn-demostrar a {
+    color: #FFF;
+    font-family: "Outfit", sans-serif;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #logo-header img {
+        width: 150px;
+        margin: 0 auto;
+    }
+
+    #navbar {
+        width: 100%;
+        justify-content: space-between;
+        gap: 45px;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+    }
+
+    section {
+        flex-direction: column; /* Alterado para empilhar elementos verticalmente */
+        height: auto; /* Ajusta a altura para o conteúdo */
+    }
+
+    .lado-e,
+    .lado-d {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .lado-e {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lado-e img {
+        width: 150px;
+        margin-bottom: 30px;
+    }
+
+    .info-flexy h3 {
+        display: flex;
+        font-size: 20px;
+        margin-bottom: 18px;
+        text-align: center;
+    }
+
+    .text-info p {
+        font-size: 16px;
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    .btn-demostrar {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .lado-d {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lado-d img {
+        width: 100%;
+        margin-top: 200px;
+        margin-bottom: 100px;
+    }
+
+    .cards {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .card-1, .card-2, .card-3 {
+        width: 100% !important; 
+    }
+
+    #informacao-plano {
+        padding-top: 200px;
+    }
+
+    #informacao-plano h3 {
+        font-size: 40px !important;
+    }
+
+    .valores-plano {
+        width: 100% !important;
+        margin-bottom: 80px;
+    }
+
+    .qtd-aluno {
+        width: 100%;
+    }
+}
