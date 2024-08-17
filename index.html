@@ -20,16 +20,27 @@
             <img src="/images/Logo_grande.webp" alt="">
         </div>
         <nav id="navbar">
-            <div>
+            <div class="nav-item">
                 <a href="#informacao-plano">Preço</a>
             </div>
-            <div>
+            <div class="nav-item">
                 <a href="#">Demostração</a>
             </div>
-            <div>
-                <a href="#contato">Contato</a>
+            <div class="nav-item">
+                <a href="#btn-insta">Contato</a>
             </div>
         </nav>
+        <div class="mobile-menu-icon">
+            <button onclick="menuShow()"><img src="/images/menu_white_36dp.svg" alt=""></button>
+        </div>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item nav-link"><a href="#informacao-plano">Preços</a></li>
+                <li class="nav-item nav-link"><a href="">Demonstração</a></li>
+                <li class="nav-item nav-link"><a href="#btn-insta">Contato</a></li>
+            </ul>
+        </div>
     </header>
     
     <main>
@@ -105,7 +116,7 @@
                     <img class="logo-flexyfit" src="images/Logo_grande.webp" alt="Logo FlexyFit">
                 </div>
                 <div class="redes">
-                    <a href="https://www.instagram.com/flexy_fitsistemas/" target="_blank">
+                    <a id="btn-insta" href="https://www.instagram.com/flexy_fitsistemas/" target="_blank">
                         <img style="margin-right: 10px;" class="img-footer" src="/images/instagram_2111463.png" alt="Insta logo">
                     </a>
                     <img class="img-footer" src="/images/whatsapp_5968841.png" alt="Insta logo">
@@ -119,5 +130,6 @@
             </div>
         </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>

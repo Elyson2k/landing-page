@@ -19,6 +19,23 @@ header {
     padding: 0px 20px;
 }
 
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+
+
 #logo-header {
     width: 40%;
     margin-left: 10%;
@@ -33,7 +50,7 @@ header {
 #navbar {
     width: 60%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     font-size: 17px;
 }
 
@@ -126,8 +143,121 @@ section img {
 }
 
 @media (max-width: 600px) {
+
     header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #004fb3;
+        width: 100%;
+        padding: 0px 20px;
+        position: relative;
+    }
+    
+    .mobile-menu-icon {
+        display: none;
+    }
+    
+    .mobile-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 3px;
+        background-color: #fffefe;
+        border: 1px solid #004fb3;
+        border-radius: 4pxrgb(254, 254, 255);
+        padding: 10px;
+        width: 200px;
+    }
+    
+    .mobile-menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .mobile-menu li {
+        border-bottom: 1px solid #004fb3;
+    }
+    
+    
+    .mobile-menu .nav-item {
+        margin: 10px 0;
+    }
+    
+    .mobile-menu a {
+        color: #0f0f0f;
+        font-size: 1rem;
+        text-decoration: none;
+        font-family: "Outfit", sans-serif;
+    }
+    
+    #logo-header {
+        width: 40%;
+        margin-left: 10%;
+        text-align: left;
+    }
+    
+    #logo-header img {
+        padding: 12px 0;
+        width: 130px;
+    }
+    
+    #navbar {
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        font-size: 17px;
+    }
+    
+    #navbar a {
+        color: #FFF;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 17px;
+        transition: 0.5s;
+    }
+    
+    #navbar a:hover {
+        color: #ffffff6b;
+    }
+    
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+    .nav-item {
+        display: none;
+    }
+    .login-button {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
         flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+
+    .open {
+        display: block;
+    }
+
+    header {
         align-items: center;
         text-align: center;
     }
@@ -139,8 +269,7 @@ section img {
 
     #navbar {
         width: 100%;
-        justify-content: space-between;
-        gap: 45px;
+        padding: 1.5rem 4rem;
         align-items: center;
         text-align: center;
         margin: 0;
