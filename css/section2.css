@@ -1,4 +1,3 @@
-/* Estilo para a seção de informação do cliente */
 #informacao-cliente {
     display: flex;
     flex-direction: column;
@@ -6,14 +5,15 @@
     justify-content: center;
     text-align: center;
     align-items: center;
-    padding: 20px; /* Adiciona padding para evitar que o conteúdo fique colado nas bordas */
-    box-sizing: border-box; /* Inclui padding no tamanho total do elemento */
+    padding: 20px;
+    box-sizing: border-box; 
 }
 
 #informacao-cliente p {
     margin-top: 15px;
     margin-bottom: 30px;
     font-family: "Lato", sans-serif;
+    color: #FFF;
 }
 
 #informacao-cliente span {
@@ -25,44 +25,39 @@
     font-family: "Anek Devanagari", sans-serif;
 }
 
-/* Estilizando a div "oferecemos" */
 .oferecemos {
     text-align: center;
-    margin-bottom: 20px; /* Espaço entre o título e os cards */
+    margin-bottom: 20px;
 }
 
-/* Estilizando a div "cards" para usar Flexbox */
 .cards {
-    width: 90%; /* Ajusta a largura para garantir que se ajuste bem em telas menores */
+    width: 80%;
     display: flex;
-    flex-wrap: wrap; /* Permite que os cards se movam para a linha seguinte se necessário */
-    justify-content: space-between; /* Espaço igual entre os cards */
-    gap: 20px; /* Espaçamento entre os cards */
-    margin: 0 auto; /* Centraliza os cards horizontalmente */
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    gap: 20px; 
+    margin: 0 auto; 
 }
 
-/* Estilizando os cards */
 .card-1, .card-2, .card-3 {
     flex: 1;
-    min-width: 200px; /* Define uma largura mínima para os cards */
-    max-width: 300px; /* Define uma largura máxima para os cards */
+    min-width: 200px; 
+    max-width: 300px;
     padding: 20px;
     background-color: #0d6efd;
     border-radius: 25px;
     box-shadow: 1px 6px 6px #013481;
-    text-align: center; /* Alinha o texto ao centro dentro dos cards */
+    text-align: center; 
 }
-
 .card-1:hover, .card-2:hover, .card-3:hover {
     background-color: #FFF;
     box-shadow: 1px 6px 6px #013481;
     transition: .6s;
 }
 
-/* Garantir que os elementos dentro dos cards também mudem de cor */
 .card-1:hover h4, .card-2:hover h4, .card-3:hover h4,
 .card-1:hover p, .card-2:hover p, .card-3:hover p {
-    color: #000 !important; /* Força a cor do texto dentro dos h4 e p */
+    color: #000 !important;
 }
 
 .card-1:hover h4, .card-2:hover h4, .card-3:hover h4 {

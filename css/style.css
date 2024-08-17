@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Open Sans", "Sans serif";
+    scroll-behavior: smooth;
 }
 
 a {
@@ -20,12 +21,13 @@ header {
 
 #logo-header {
     width: 40%;
-    text-align: center;
+    margin-left: 10%;
+    text-align: left;
 }
 
 #logo-header img {
     padding: 12px 0;
-    width: 200px;
+    width: 130px;
 }
 
 #navbar {
@@ -48,9 +50,7 @@ header {
 
 section {
     display: flex;
-    flex-wrap: wrap; /* Adicionado para garantir que elementos se movam para baixo quando necessário */
-    width: 100%;
-    background-color: #dedede;
+    background-color: #fffefe;
     justify-content: center;
     align-items: center;
     height: 800px;
@@ -62,18 +62,22 @@ section {
 }
 
 .lado-e {
-    width: 35%;
-    margin-left: 15%;
+    width: 40%;
+    margin-left: 10%;
 }
 
 .lado-d {
-    width: 50%;
+    margin-right: 10%;
+    width: 40%;
+}
+
+.lado-d img{
+    width: 100%;
 }
 
 section img {
     width: 180px;
     margin-bottom: 30px;
-    margin-top: 200px;
     max-width: 100%;
     height: auto;
 }
@@ -82,13 +86,14 @@ section img {
     font-size: 50px;
     margin-bottom: 15px;
     font-family: "Outfit", sans-serif;
+    color: #0f0f0f;
 }
 
 .text-info p {
-    color: #0000008c;
+    color: #0f0f0f;
     font-size: 17px;
     margin-bottom: 25px;
-    font-family: "Edu VIC WA NT Beginner", cursive;
+    font-family: "Outfit", sans-serif;
 }
 
 .btn-demostrar {
@@ -103,6 +108,21 @@ section img {
     color: #FFF;
     font-family: "Outfit", sans-serif;
     font-weight: bold;
+}
+
+@media (max-width: 890px) {
+    .info-flexy h3 {
+        font-size: 40px;
+        margin-bottom: 15px;
+        font-family: "Outfit", sans-serif;
+    }
+}
+
+@media (max-width: 800px) {
+    .info-flexy h3 {
+        font-size: 30px;
+        font-family: "Outfit", sans-serif;
+    }
 }
 
 @media (max-width: 600px) {
@@ -129,6 +149,10 @@ section img {
     section {
         flex-direction: column; /* Alterado para empilhar elementos verticalmente */
         height: auto; /* Ajusta a altura para o conteúdo */
+    }
+
+    section img {
+        margin-top: 200px;
     }
 
     .lado-e,
@@ -194,15 +218,24 @@ section img {
     }
 
     #informacao-plano {
+        width: 40%;
         padding-top: 200px;
     }
 
     #informacao-plano h3 {
-        font-size: 40px !important;
+        font-size: 25px !important;
+    }
+
+    #valorPlano {
+        font-size: 80px !important;
+    }
+    
+    .nome-plano {
+        width: 50% !important;
     }
 
     .valores-plano {
-        width: 100% !important;
+        width: 70% !important;
         margin-bottom: 80px;
     }
 
