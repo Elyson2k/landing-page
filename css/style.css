@@ -50,7 +50,7 @@ header {
 #navbar {
     width: 60%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     font-size: 17px;
 }
 
@@ -151,7 +151,7 @@ section img {
         background-color: #004fb3;
         width: 100%;
         padding: 0px 20px;
-        position: relative;
+        position: sticky;
     }
     
     .mobile-menu-icon {
@@ -162,11 +162,10 @@ section img {
         display: none;
         position: absolute;
         top: 100%;
-        right: 3px;
-        background-color: #fffefe;
-        border: 1px solid #004fb3;
-        border-radius: 4pxrgb(254, 254, 255);
-        padding: 10px;
+        right: 0px;
+        border-radius: 0px 0px 0px 10px;
+        background-color: #004fb3;
+        padding: 2px;
         width: 200px;
     }
     
@@ -176,17 +175,12 @@ section img {
         margin: 0;
     }
 
-    .mobile-menu li {
-        border-bottom: 1px solid #004fb3;
-    }
-    
-    
     .mobile-menu .nav-item {
         margin: 10px 0;
     }
     
     .mobile-menu a {
-        color: #0f0f0f;
+        color: #FFF;
         font-size: 1rem;
         text-decoration: none;
         font-family: "Outfit", sans-serif;
